@@ -32,8 +32,8 @@ type WatermarkSettings struct {
 	Url     string  `json:"url,omitempty"`     // The URL of a remote image file to use as a watermark.
 	X       int32   `json:"x,omitempty"`       // Where to place a watermark, on the x axis.
 	Y       int32   `json:"y,omitempty"`       // Where to place a watermark, on the y axis.
-	Width   int32   `json:"width,omitempty"`   // The scaled width of a watermark.
-	Height  int32   `json:"height,omitempty"`  // The scaled height of a watermark.
+	Width   string  `json:"width,omitempty"`   // Parsed to integer first, or keep string.
+	Height  string  `json:"height,omitempty"`  // Parsed to integer first, or keep string.
 	Origin  string  `json:"origin,omitempty"`  // Which part of the output to base the watermark position on.
 	Opacity float64 `json:"opacity,omitempty"` // Make the watermark transparent.
 }
