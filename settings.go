@@ -12,7 +12,7 @@ type ThumbnailSettings struct {
 	StartAtFirstFrame   bool                     `json:"start_at_first_frame,omitempty"`  // Start generating the thumbnails starting at the first frame.
 	Interval            int32                    `json:"interval,omitempty"`              // Take thumbnails at an even interval, in seconds.
 	IntervalInFrames    int32                    `json:"interval_in_frames,omitempty"`    // Take thumbnails at an even interval, in frames.
-	Times               []int32                  `json:"times,omitempty"`                 // An array of times, in seconds, at which to grab a thumbnail.
+	Times               []float32                `json:"times,omitempty"`                 // An array of times, in seconds, at which to grab a thumbnail.
 	AspectMode          string                   `json:"aspect_mode,omitempty"`           // How to handle a thumbnail width/height that differs from the aspect ratio of the input file.
 	Size                string                   `json:"size,omitempty"`                  // Thumbnail resolution as WxH.
 	Width               int32                    `json:"width,omitempty"`                 // The maximum width of the thumbnail (in pixels).
